@@ -1,9 +1,9 @@
 # speccy-pico
-fork of the ZX Spectrum emulator (MURMURATOR) with support for TRD files (BETA DISK INTERFACE 128)
 
 Это тестовая версия эмулятора ZX Spectrum на базе RP2040 микроконтроллера от Raspberry Pi
 
 с поддержкой файлов *.trd [tr-dos]
+
 
 Код эмулятора v0.30 взят https://t.me/ZX_MURMULATOR/27517
 
@@ -21,8 +21,10 @@ fork of the ZX Spectrum emulator (MURMURATOR) with support for TRD files (BETA D
 используется ROM Пентагона с tr-dos 5.04TM 
 
 ----------------------------------------------------------------------------------------
-
 This is a test version of the ZX Spectrum emulator based on the RP2040 microcontroller from Raspberry Pi
+
+with support for *.td [tr-dos] files
+
 
 The emulator code v0.30 is freely available on https://t.me/ZX_MURMULATOR/27517
 
