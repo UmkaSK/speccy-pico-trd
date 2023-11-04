@@ -2,8 +2,8 @@
 // #define PICO_FLASH_SIZE_BYTES (4 * 1024 * 1024)
 //PICO_FLASH_SPI_CLKDIV
 
-#define FW_VERSION "v0.30"
-#define FW_AUTHOR "tecnocat"
+#define FW_VERSION "v0.00"
+#define FW_AUTHOR "test"
 
 #include <stdio.h>
 #include "pico/stdlib.h"
@@ -260,7 +260,7 @@ void draw_logo_header(){
 	} */
 	//draw_text_len(FONT_W*29,FONT_H-1,"MURMULATOR",COLOR_TEXT,COLOR_FULLSCREEN,10);
 //	draw_text_len(FONT_W*29,FONT_H-1,  "TEST v0.00",CL_LT_RED,COLOR_BORDER,10);
-	draw_text(FONT_W*29,FONT_H,  "TEST v0.00",CL_LT_RED,COLOR_BORDER);
+	draw_text_len(FONT_W*27,FONT_H-1,  "speccy-pico",CL_WHITE,COLOR_BORDER,11);
 }
 
 void draw_mur_logo(){
@@ -275,12 +275,13 @@ void draw_mur_logo(){
 }
 
 void draw_mur_logo_big(uint8_t xPos,uint8_t yPos,uint8_t help){ //x-155 y-60
-	for(uint8_t y=0;y<110;y++){
+
+/* 	for(uint8_t y=0;y<110;y++){
 		for(uint8_t x=0;x<138;x++){
 			uint8_t pixel = mur_logo2[x+(y*138)];
 			if (pixel<0xFF)	draw_pixel(xPos+x,yPos+y,pixel);
 		}
-	}
+	} */
 	if(help==1){
 		draw_text_len(xPos+FONT_W+2,yPos+110+FONT_H*2,"   F1 - HELP   ",CL_GREEN,CL_BLACK,15);
 		draw_text_len(xPos+FONT_W+2,yPos+110+FONT_H*3,"WIN,HOME-RETURN",CL_GREEN,CL_BLACK,15);	
@@ -291,8 +292,8 @@ void draw_mur_logo_big(uint8_t xPos,uint8_t yPos,uint8_t help){ //x-155 y-60
 	}
 
 
-draw_text(xPos-12,yPos+110+FONT_H*5,"TEST VERSION  TR-DOS",CL_RED,CL_BLACK);	
-
+draw_text(xPos+10,yPos+00+FONT_H*5,"SPECCY-PICO 2023",CL_CYAN,CL_BLACK);	
+draw_text(xPos-8,yPos+40+FONT_H*5,"TEST VERSION  TR-DOS",CL_RED,CL_BLACK);
 }
 
 void draw_help_text(){
