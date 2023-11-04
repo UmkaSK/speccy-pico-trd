@@ -1,4 +1,4 @@
-# speccy-pico-with-TRD
+# speccy-pico
 fork of the ZX Spectrum emulator (MURMURATOR) with support for TRD files (BETA DISK INTERFACE 128)
 
 Это тестовая версия эмулятора ZX Spectrum на базе RP2040 микроконтроллера от Raspberry Pi
@@ -11,8 +11,8 @@ fork of the ZX Spectrum emulator (MURMURATOR) with support for TRD files (BETA D
 
 @tecnocat https://t.me/tecnocat
 
-
-Добавлена поддержка работы с файлами *.trd  tr-dos (BETA DISK INTERFACE 128) 
+ 
+Мною добавлена поддержка работы с файлами *.trd  tr-dos (BETA DISK INTERFACE 128) 
 
 изменена цветовая палитра файлового менеджера
 
